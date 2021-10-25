@@ -1,0 +1,98 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>
+        FORMULARIO G28
+    </title>
+</head>
+
+<body>
+    <H1>FORMULARIO DE INSCRIPCION</H1>
+    <table border=2 bgcolor=cyan>
+        <form action="" method="post" name="frm">
+            <tr>
+                <td>* Codigo </td>
+                <td><input type="text" name=wcod value="" required></td>
+            </tr>
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name=wnom value="" maxlength=10 size=20 placeholder="Digite nombre"></td>
+            </tr>
+            <tr>
+                <td>edad:</td>
+                <td><input type="number" name=we value="" min=18 max=50></td>
+            </tr>
+            <tr>
+                <td>fecha:</td>
+                <td><input type="date" value="" name=wfe></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" pattern=".+@saya\.com" name=wemail value="" placeholder="nombre@saya.com"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>Password: <input type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número, una letra mayúscula, una minúscula y al menos 8 o más caracteres"></td>
+            </tr>
+            <tr>
+                <td>Color de la piel:</td>
+                <td><input type="color" value="" name=wcolo></td>
+            </tr>
+            <tr>
+                <td>Genero</td>
+                <td>
+                    <input type="radio" value="" name=genero>Masculino
+                    <input type="radio" value="" name=genero>Femenino
+                </td>
+            </tr>
+            <tr>
+                <td>Deporte</td>
+                <td>
+                    <input type="checkbox" value="" name=wfu>Futbol
+                    <input type="checkbox" value="" name=wna>Natacion
+                    <input type="checkbox" value="" name=waje>Ajedrez
+                    <input type="checkbox" value="" name=wbol>voleibol
+                </td>
+            </tr>
+            <tr>
+                <td>Ciudad de Origen</td>
+                <td>
+                    <select name="wciud">
+						  <option value="c1">Neiva</option>
+						  <option value="c2">Ibague</option>
+						  <option value="c3">Bogota</option>
+						  <option value="c4">Pereira</option>
+						  <option value="c5">Cali</option>
+						  <option value="c6">Medellin</option>
+						</select>
+                </td>
+            </tr>
+            <tr>
+                <td>Sedes de la empresa</td>
+                <td>
+                    <input list="sede" name="wciudad">
+                    <datalist id="sede">
+					   <option value="Neiva">
+					   <option value="Ibague">
+					   <option value="Pereira">
+					   <option value="Bogota">
+					   <option value="Cali">
+				   </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Observaciones</td>
+                <td><textarea id="observa" rows=6 cols=40 maxlength=50></textarea></td>
+            </tr>
+            <tr>
+                <tr>
+                    <td><input type="submit" value="Enviar"></td>
+                    <td><input type="reset" value="Limpiar"></td>
+                </tr>
+
+        </form>
+    </table>
+</body>
+
+</html>
